@@ -13,7 +13,6 @@
         @include rmin($sm)
             padding-top: 40px
             padding-bottom: 40px
-
         
     &__top
         display: flex
@@ -25,18 +24,28 @@
             justify-content: space-between
 
     &__logo
+        margin-top: -40px
+
         margin-bottom: 15px
+        @include r($sm)
+            margin-top: -50px
+
         @include rmin($sm)
             margin-bottom: 0
 
     &__contacts
         text-align: center
+        @include r($sm)
+            width: 100%
+        
+
         
         @include rmin($sm)
             text-align: right
         
     
     &__item
+
         margin-bottom: 15px
         display: block
         color: #FFF
@@ -46,7 +55,7 @@
 
     &__copyright
         margin-top: 0
-        
+        padding-left: 14px
         font-size: 13px
         font-weight: 400
         text-align: center
@@ -54,7 +63,7 @@
         
         @include rmin($sm)
         
-            margin-top: -11px
+            // margin-top: -11px
             text-align: left
             
         

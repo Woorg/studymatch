@@ -1,0 +1,102 @@
+.partners
+    background-position: -110px 90px
+    background-repeat: no-repeat
+    background-size: cover
+    overflow: hidden
+    @include rmin($sm)
+        background-position: 20px 130px
+        background-size: contain
+        
+    @include rmin($md)
+        background-position: 20px 130px
+        background-size: contain
+        
+    @include rmin($lg)
+        background-position: 70px 0
+        background-size: contain
+        
+    &__in
+        padding-top: 70px
+        height: 635px
+        
+        @include r($m)
+            height: auto
+            
+        @include rmin($sm)
+            height: auto
+
+        @include rmin($lg)
+            height: 875px
+        
+    &__title
+        margin-bottom: 65px
+        
+        @include rmin($sm)
+            margin-bottom: 80px
+        
+        @include rmin($lg)
+            margin-bottom: $titlemargin 
+            
+
+    &__list
+        margin-left: -10px
+        margin-right: -10px
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: flex-start
+        @include rmin($sm)
+            margin-left: -15px
+            margin-right: -15px
+
+        
+    &__row
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        &:last-child
+            margin-top: 40px
+            
+       
+
+    &__partner
+        position: relative
+        margin-left: 10px
+        margin-right: 10px
+        margin-bottom: 30px
+        
+        max-width: 174px
+        flex-grow: 174px 
+        
+        display: flex
+        justify-content: center
+        align-items: center
+        
+        
+        @include r($m)
+            max-width: 50%
+            flex-grow: 50%
+        
+        @include rmin($sm)
+        
+            margin-right: 15px
+            margin-left: 15px
+            max-width: 29.5%
+            flex-grow: 29.5%
+            
+        @include rmin($lg)
+            margin-bottom: 40px
+            max-width: 30.5%
+            flex-grow: 30.5%
+         
+
+    // &__image
+    //     position: absolute
+    //     top: 50%
+    //     left: 50%
+    //     transform: translate(-50%, -50%)
+        
+
+
+

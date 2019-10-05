@@ -1,0 +1,149 @@
+.header
+    position: fixed
+    z-index: 2
+    top: 0
+    left: 0
+    width: 100%
+    background-color: #2e2e2e
+    color: #fff 
+    font-family: arial, sans-serif
+    font-size: 18px
+    line-height: 1.2
+    
+    &__in
+        padding-top: 40px
+        padding-bottom: 40px
+        height: 120px
+        display: flex
+        align-items: flex-start
+        flex-wrap: wrap      
+          
+        @include rmin($lg)
+            padding-top: 34px
+            padding-bottom: 29px
+            
+            flex-wrap: nowrap
+        
+    
+    &__logo
+        margin-top: -40px
+        margin-right: 20px
+        
+        @include r($xl)
+            margin-right: auto
+        
+        @include rmin($sm)
+            margin-right: 20px
+
+        @include rmin($md)
+            margin-top: -34px
+
+        @include rmin($lg)
+            margin-right: 57px
+
+
+    &__email,
+    &__phone
+        display: none
+
+        text-decoration: none
+        color: #fff 
+        
+        @include rmin($md)
+            display: flex
+            flex-wrap: wrap
+
+    &__email
+        margin-top: 0
+        margin-right: 29px
+        display: none
+        font-weight: 700
+        @include tr(color .3s ease) 
+        
+        @include r($xl)
+            margin-right: auto
+            
+        @include rmin($sm)
+            display: flex
+        
+        @include rmin($lg)
+            margin-top: 19px
+            
+        &:hover
+            color: darken(#fff, 10)
+            @include tr(color .3s ease)
+
+    &__phones
+        margin-top: 0
+        margin-right: 32px
+        max-width: 144px
+        width: 100%
+        display: none
+        @include r($xl)
+            margin-right: 60px
+            margin-left: auto
+            
+        @include rmin($sm)
+            margin-top: 0
+            flex-wrap: wrap
+            display: flex
+        
+        // @include rmin($md)
+        
+        @include rmin($lg)
+            margin-top: 8px
+        
+        
+
+    &__address
+        margin-top: 20px
+        margin-right: 35px
+        max-width: 100%
+        width: 100%
+        font-weight: 700
+
+        @include r($xl)
+            margin-right: auto
+            
+        @include rmin($lg)
+            margin-top: 0
+            max-width: 256px
+            display: flex
+            
+
+        
+    &__langs
+        position: absolute
+        top: 52px
+        right: 76px
+       
+        @include rmin($sm)
+            position: absolute
+            top: 65px
+            right: auto
+            left: 260px
+
+
+        @include rmin($lg)
+            position: static
+            margin-top: 18px
+            margin-right: 60px
+            
+        @include rmin($xl)
+            margin-right: auto
+        
+
+            // display: flex
+        
+    &__nav
+        position: absolute
+        top: 34px
+        right: 20px
+        margin-top: 7px
+        margin-left: auto
+        
+        @include rmin($lg)
+            position: relative
+            top: 0
+            right: 0
+        

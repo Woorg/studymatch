@@ -1,0 +1,44 @@
+html,
+body
+  height: 100%
+
+.page
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+    color: #363636
+    font-display: swap
+    font-family: $a 
+
+    &__wrapper
+        position: relative
+        padding-top: 120px
+        display: flex
+        flex-direction: column
+        min-height: 100vh
+    &__inner
+        flex-grow: 1
+        flex-shrink: 0
+        flex-basis: auto
+        overflow: hidden
+        
+
+.in
+    margin: auto
+    padding-right: 20px
+    padding-left: 20px
+    width: 100%
+    max-width: 1200px
+    
+    @include rmin($lg)
+        padding-right: 15px
+        padding-left: 15px
+        // max-width: 440px
+
+img
+  max-width: 100%
+  height: auto
+
+
+
+

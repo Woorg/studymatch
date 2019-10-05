@@ -1,0 +1,86 @@
+.doing
+    overflow: hidden
+    &__in
+        padding-top: 80px
+        // padding-bottom: 80px
+        
+        @include rmin($lg)
+            padding-top: $padding
+            padding-bottom: 90px
+        
+
+    &__title
+        margin-bottom: 65px 
+        
+        @include rmin($lg)
+            margin-bottom: $titlemargin
+
+
+
+    &__list
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+
+    &__item
+        margin-bottom: 30px
+        max-width: 100%
+        flex-basis: 100%
+        
+        display: flex
+        align-items: center
+        
+        @include rmin($sm)
+            max-width: 100%
+            flex-basis: 100%
+
+        @include rmin($lg)
+            max-width: 48%
+            flex-basis: 48%
+            
+        &:nth-child(1)
+            order: 1
+            @include rmin($sm) 
+                order: 1
+                
+        &:nth-child(2)
+            order: 4
+            @include rmin($sm)
+                order: 1
+                
+        &:nth-child(3)
+            order: 2
+            @include rmin($sm)
+                order: 3
+                
+        &:nth-child(4)
+            order: 5
+            @include rmin($sm)
+                order: 5
+                
+        &:nth-child(5)
+            order: 3
+            @include rmin($sm)
+                order: 5
+        &:nth-child(6)
+            order: 6
+            @include rmin($sm)
+                order: 6
+
+
+            
+
+    &__icon
+        width: 70px
+        height: 70px
+        flex-shrink: 0
+        
+    &__text
+        margin-left: 30px
+        color: #363636
+        font-family: $a
+        font-size: 16px
+        font-weight: 400
+        line-height: 1.375
+        letter-spacing: 0.32px

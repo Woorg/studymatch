@@ -1,0 +1,123 @@
+.nav
+            
+    &__trigger
+        @include resetbutton()
+        width: 36px
+        height: 39px
+        background-size: cover
+        fill: #ff1ec7
+        @include tr(fill .3s ease)
+        &:hover
+            fill: darken(#ff1ec7, 10)   
+            @include tr(fill .3s ease)
+
+    &__trigger_active + .nav__list-w
+        display: block
+        @include tr(all .3s ease)
+
+
+    &__list-w
+        position: absolute
+        top: 100%
+        right: -20px
+        
+        padding-top: 55px
+        padding-left: 94px
+        padding-right: 70px
+
+        display: none
+        width: 100vw
+        // height: calc(100vh - 98px)
+        height: 100vh
+        background-color: #2e2e2e
+        border-radius: 0
+        opacity: 0.89
+
+        @include tr(all .3s ease)
+        
+        @include r($m)
+            padding-top: 20px
+            padding-left: 20px
+            padding-right: 20px
+            
+            
+        @include rmin($sm)
+            top: 100%
+            right: -20px
+            padding-top: 150px
+            width: 470px
+            border-radius: 0 0 30px
+
+
+    // &__list
+            
+        
+    &__item
+        margin-bottom: 15px
+        
+        @include rmin($sm)
+            margin-bottom: 30px
+
+        &:hover
+            .nav__link
+                font-weight: 700 
+                &:after
+                    background-color: #ff1ec7
+                    @include tr(all .1s ease)
+                
+
+
+    &__item_active,
+        .nav__link
+            font-weight: 700 
+            &:after
+                background-color: #ff1ec7
+                @include tr(all .1s ease)
+                
+
+
+
+    &__link
+        position: relative
+        padding-bottom: 5px
+        color: #ffffff
+        font-family: $a
+        font-size: 16px
+        font-weight: 400
+        line-height: 1.3
+        text-decoration: none
+        &:after
+            position: absolute
+            top: 100%
+            left: 0
+            content: '' 
+            width: 91px
+            height: 4px
+            background-color: transparent
+            border-radius: 2px
+            @include tr(all .1s ease)
+            
+
+
+    &__phones
+        margin-top: 30px
+        display: block
+        @include rmin($sm)
+            margin-top: 0
+            display: none
+            
+    .phones__phone
+        margin-bottom: 5px
+        
+    &__email
+        margin-top: 25px
+        display: block
+        color: #ffffff
+        font-family: $a
+        font-size: 18px
+        font-weight: 700
+        line-height: 1.2
+        text-decoration: none
+        @include rmin($sm)
+            margin-top: 0
+            display: none

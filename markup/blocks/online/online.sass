@@ -1,0 +1,32 @@
+.online
+    overflow: hidden
+    .section__title
+        span,
+        strong
+            &:after
+                top: calc(100% + 35px)
+                @include rmin($sm)
+                    top: 100%
+
+    .section__list
+        padding-top: 0
+        @include rmin($lg)
+            padding-top: 127px
+
+        &:after
+            top: 211px
+            left: -278px
+            right: auto
+            
+
+    .section__image
+        @include rmin($lg)
+            margin-bottom: 60px
+            
+        &:after
+            top: 240px
+            right: -80px
+            
+            
+            @include rmin($lg)
+                display: none

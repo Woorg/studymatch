@@ -1,0 +1,94 @@
+.markets
+    overflow: hidden
+    &__in
+        padding-top: 80px
+        padding-bottom: 80px
+        @include rmin($sm)
+            padding-top: $padding
+            padding-bottom: $padding  
+
+    &__title
+        margin-bottom: 65px
+        @include rmin($sm)
+            margin-bottom: $titlemargin
+
+        span,
+        strong
+            &:after
+                top: calc(100% + 40px)
+                @include rmin($sm)
+                    top: 100%
+
+            
+
+    &__list
+        position: relative
+        left: -140px
+        width: 724px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: flex-start
+       
+        @include r($sm)
+            position: static
+            width: auto     
+
+
+        @include rmin($sm)
+            position: static
+            width: auto
+
+    &__item
+        position: relative
+        margin-bottom: 30px
+        max-width: 33%
+        min-height: 240px
+        flex-shrink: 0
+        flex-grow: 0
+        flex-basis: 33% 
+        display: flex
+        justify-content: center
+        align-items: center
+        
+        @include r($sm)
+            max-width: 100%
+            flex-basis: 100%
+
+        @include rmin($sm)
+            max-width: 31.6%
+            flex-basis: 31.6% 
+            
+        
+    // &__map
+
+        
+    //     img
+
+    &__city
+        position: absolute
+        top: 50%
+        left: 50%
+        padding-top: 6px
+        padding-bottom: 9px
+
+        width: 164px
+        height: 37px
+        background-color: #ffffff
+        color: #ff1ec7
+        font-family: $my
+        font-size: 25px
+        font-weight: 700
+        line-height: 1
+        letter-spacing: 0.5px
+        text-align: center
+        text-decoration: none
+
+        border-radius: 19px
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2)
+        transform: translate(-50%, -50%)
+        
+        @include rmin($sm)
+        
+            width: 194px
+            

@@ -1,0 +1,51 @@
+mixin header(data)
+    header.header
+        .header__in.in
+            a.header__logo.logo(href="#") 
+                img(src='assets/images/general/logo.png', srcset='assets/images/general/logo@2x.png 2x, assets/images/general/logo@3x.png 3x' alt="Study match")
+
+            a.header__email(href="mailto:studymatchservis@mail.ru") studymatchservis@mail.ru
+            .header__phones.phones
+                a.phones__phone(href="tel:+79507433862") +7 950 743 38 62
+                a.phones__phone(href="tel:+79507433861") +7 950 743 38 61
+
+            .header__address 1013 Centre Road, Suite <br/>403-B, Wilmington, DE 19805, <br/>New Castle
+
+            .header__langs.langs
+                a.langs__link(href="#ru") ru
+                a.langs__link.langs__link_active(href="#en") en
+                a.langs__link(href="#fr") fr
+                a.langs__link(href="#es") es
+
+            nav.header__nav.nav
+                button.nav__trigger
+                    != pugHelpers.Icon.call(locals, {iconName: 'menu', className: 'nav__trigger-icon', iconWidth: '36', iconHeight: '39'})
+
+                .nav__list-w
+                    ul.nav__list
+                        li.nav__item
+                            a.nav__link(href="#doing") What are we doing
+                        li.nav__item.nav__item_active
+                            a.nav__link(href="#events") Promotional OFFSITE Marketing Events
+                        li.nav__item
+                            a.nav__link(href="#service") Our service includes
+                        li.nav__item
+                            a.nav__link(href="#online") Promotional ONLINE Marketing Events
+                        li.nav__item
+                            a.nav__link(href="#why") Why choose a StudyMatch PR agency?
+                        li.nav__item
+                            a.nav__link(href="#attraction") Attraction channels
+                        li.nav__item
+                            a.nav__link(href="#examples") Ad examples
+                        li.nav__item
+                            a.nav__link(href="#reviews") Partner reviews
+                        li.nav__item
+                            a.nav__link(href="#partners") Our partners
+                        li.nav__item
+                            a.nav__link(href="#cost") Packages and cost of services
+
+                    .nav__phones.phones
+                        a.phones__phone(href="tel:+79507433862") +7 950 743 38 62
+                        a.phones__phone(href="tel:+79507433861") +7 950 743 38 61
+
+                    a.nav__email(href="mailto:studymatchservis@mail.ru") studymatchservis@mail.ru

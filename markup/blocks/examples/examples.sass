@@ -1,0 +1,73 @@
+.examples
+    overflow: hidden
+    &__in
+        padding-bottom: 80px
+        @include rmin($lg)
+            padding-bottom: $padding 
+        
+    &__title
+        margin-bottom: 65px
+        @include rmin($lg)
+            margin-bottom: $titlemargin
+
+    &__list
+        position: relative
+        left: -20px
+        
+        margin-right: -120px
+        margin-left: -120px
+        
+        width: 724px
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: flex-start
+        
+        // @include r($sm)
+        //     position: static
+        //     margin-left: 0
+        //     margin-right: 0
+        //     width: auto
+            
+        @include rmin($sm)
+            position: static
+            
+            margin-right: -15px
+            margin-left: -15px
+            width: auto
+            
+    
+
+    &__item
+        margin-right: 15px
+        margin-bottom: 30px
+        margin-left: 15px
+        
+        max-width: 29%
+        flex-basis: 29%
+        
+        // @include r($sm)
+        //     max-width: 100%
+        //     flex-basis: 100%
+        
+        @include rmin($sm)
+            max-width: 29.5%
+            flex-basis: 29.5%
+            
+        @include rmin($lg)
+            max-width: 22.5%
+            flex-basis: 22.5%
+            
+            
+    &__link
+        display: flex
+
+    &__image
+        background-color: #363636
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2)
+        border-radius: 30px
+
+        img
+            border-radius: 30px
+            display: block
+        

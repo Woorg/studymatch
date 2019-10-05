@@ -1,0 +1,141 @@
+.button
+    @include resetbutton()
+    padding-top: 20px
+    padding-right: 94px
+    padding-bottom: 19px
+    padding-left: 94px
+    height: 55px
+    
+    display: inline-block
+
+    background-color: #ff1ec7
+    
+    color: #ffffff
+    font-family: $a
+    font-size: 16px
+    font-weight: 700
+    line-height: 1
+
+    border-radius: 24px
+    text-decoration: none
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2)
+    @include tr(background-color .3s ease)
+    
+    &:hover
+        background-color: darken(#ff1ec7, 10)
+        @include tr(background-color .3s ease)
+
+        
+
+
+.title
+    font-family: $mo
+    &_biggest
+        color: #ffffff
+        font-weight: 700
+        font-size: 40px
+        line-height: 1.3
+        text-transform: uppercase
+        
+        @include rmin($sm)
+            font-size: 66px
+            line-height: 1.18181818181818
+            
+        @include rmin($lg)
+            font-size: 68px
+            line-height: 1.147
+
+        
+
+
+    &_big
+        // position: relative
+        color: #363636
+        font-weight: bold 
+        font-size: 28px
+        text-transform: uppercase
+        line-height: 1.4
+        @include rmin($sm)
+            font-size: 40px
+            line-height: 1.3
+
+
+        span,
+        strong
+            position: relative
+            padding-bottom: 15px
+            &:after
+                position: absolute
+                top: 100%
+                left: 0
+                content: '' 
+                width: 100%
+                height: 10px
+                background-color: #363636
+                border-radius: 5px
+                @include r($sm)
+                    display: none
+                
+
+    &_medium
+        color: #ffffff
+        font-size: 25px
+        font-weight: 700
+        line-height: 1.4
+        text-transform: uppercase
+        
+        @include rmin($sm)
+            font-size: 30px
+            line-height: 1.733
+
+
+// .under
+//     &_mob
+//         &:after
+//             display: none
+//             @include r($m)
+//                 display: block
+//             @include rmin($m)
+//                 display: block
+//             @include rmin($sm)
+//                 display: none
+        
+//     &_tablet
+//         &:after
+//             display: none
+//             @include r($m)
+//                 display: none
+            
+//             @include rmin($m)
+//                 display: none
+                
+//             @include rmin($sm)
+//                 display: block
+
+
+
+
+.slick-arrow
+    top: 110px
+    @include bg($arrow)
+    opacity: 1
+    font-family: initial 
+    transform: translateY(-50%)
+    @include tr(all .3s ease)
+    
+    &:hover,
+    &:focus
+        @include bg($arrow)
+        opacity: .8
+        @include tr(all .3s ease)
+
+    &:before
+        display: none
+
+.slick-next
+    right: -45px
+    transform: translateY(-50%) rotate(0deg)  
+
+.slick-prev
+    left: -45px
+    transform: translateY(-50%) rotate(-180deg) 

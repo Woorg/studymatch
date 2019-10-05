@@ -1,0 +1,35 @@
+.service
+    overflow: hidden
+    .section__title
+        margin-bottom: 65px
+        
+        @include rmin($lg)
+            margin-bottom: $titlemargin 
+            
+        span,
+        strong
+            &:after
+                // top: calc(100% + 40px)
+                @include rmin($sm)
+                    top: 100% 
+
+    .section__content
+        margin-bottom: 15px
+        padding-top: 0
+
+        @include rmin($lg)
+            margin-bottom: 0
+            
+    .section__list
+        padding-top: 0
+        &:after
+            top: 200px
+            left: auto
+            right: -104px
+
+    .section__image
+        margin-top: 0
+        margin-bottom: 0
+        
+        @include rmin($lg)
+            margin-top: -112px

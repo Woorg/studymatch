@@ -1,0 +1,13 @@
+mixin cta(data)
+    section.cta&attributes(attributes)
+        .cta__in.in
+            h2.cta__title.title.title_medium Book a free consultation
+            form.cta__form.form(action="mail.php" method="post")
+                .form__row
+                    .form__field
+                        input.form__text(type="text", value="", placeholder="Your name" name="name" required)
+                   
+                    .form__field
+                        input.form__text(type="text", value="", placeholder="Your Email" name="email" required)
+                    
+                input.form__submit.button(type="submit", value="Write to us")

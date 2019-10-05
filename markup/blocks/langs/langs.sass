@@ -1,0 +1,25 @@
+.langs
+    display: flex
+    
+    @include r($m)
+        display: none
+    @include rmin($m)
+        display: flex
+    
+        
+    &__link
+        margin-right: 8px
+        padding-bottom: 2px
+        color: #fff
+        font-size: 16px
+        text-decoration: none
+        text-transform: uppercase
+        box-shadow: none
+        @include tr(box-shadow .3s ease)
+        &:last-child
+            margin-right: 0
+        
+        &:hover,
+        &.langs__link_active
+            box-shadow: inset 0 -1px 0 0 #ff1ec7
+            @include tr(box-shadow .3s ease)

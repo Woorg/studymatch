@@ -1,0 +1,119 @@
+.section
+    &__in
+        padding-top: 80px
+        
+        @include rmin($lg)
+            padding-top: $padding 
+            
+    &__title
+        margin-bottom: 65px
+        
+
+        @include rmin($lg)
+            margin-bottom: $titlemargin
+
+    &__row
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: flex-start
+       
+    &__image
+        position: relative
+        margin-bottom: 30px
+        max-width: 100%
+        flex-shrink: 1
+        flex-grow: 0
+        flex-basis: 100%
+        
+        border-radius: 30px
+        
+        &:after
+            position: absolute
+            top: 290px
+            right: -80px
+            content: attr(data-title)
+            
+            opacity: 0.08
+            display: none
+            color: #363636
+            font-family: $mo
+            font-size: 55px
+            font-weight: 700
+            line-height: 1
+            text-transform: uppercase
+
+            transform: rotate(-90deg) 
+            
+            @include rmin($md)
+                display: none
+            
+            @include rmin($lg)
+                display: none
+                
+        @include rmin($lg)
+            margin-bottom: 0
+            max-width: 48%
+            flex-basis: 48%
+         
+        img
+            max-width: 100%
+            height: auto
+            display: block
+                
+
+    &__content
+        max-width: 100%
+        flex-shrink: 0
+        flex-grow: 0
+        flex-basis: 100%
+        
+        @include rmin($lg)
+            max-width: 48.7%
+            flex-basis: 48.7%
+            
+
+    &__list
+        position: relative
+        padding-top: 0
+        
+        @include rmin($lg)
+            padding-top: 216px
+
+        &:after
+            position: absolute
+            top: 261px
+            left: -159px
+            content: attr(data-title)
+            
+            display: none
+            opacity: 0.08
+            color: #363636
+            font-family: $mo
+            font-size: 55px
+            font-weight: 700
+            line-height: 1
+            text-transform: uppercase
+
+            transform: rotate(-90deg) 
+            
+            @include rmin($lg)
+                display: block
+                
+    &__item
+        margin-bottom: 15px
+        line-height: 1.375
+        letter-spacing: 0.32px
+        
+        @include rmin($sm)
+            margin-bottom: 20px
+
+        a
+            color: #ff1ec7
+            text-decoration: none
+            @include tr(color .3s ease)
+            &:hover
+                color: darken(#ff1ec7, 10)
+                @include tr(color .3s ease)
+
+

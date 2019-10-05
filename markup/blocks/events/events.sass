@@ -1,0 +1,56 @@
+.events
+    overflow: hidden
+    .section__in
+        padding-top: 80px
+        
+        @include rmin($lg)
+            padding-top: $padding 
+            
+    .section__title
+        margin-bottom: 65px
+        
+        @include rmin($sm)
+            margin-bottom: 75px
+
+        @include rmin($lg)
+            margin-bottom: $titlemargin 
+            
+        span,
+        strong
+            &:after
+                top: calc(100% + 35px) 
+                @include rmin($sm)
+                    top: 100% 
+                
+//     &__row
+//         display: flex
+//         flex-wrap: wrap
+//         justify-content: space-between
+//         align-items: flex-start
+        
+//     &__image
+//         max-width: 48%
+//         flex-basis: 48% 
+//         background: #efefef
+//         img
+//             max-width: 100%
+//             height: auto
+            
+//     &__content
+//         flex-grow: 1
+
+//     &__list
+//         position: relative
+//         padding-top: 216px
+//         &:after
+//             position: absolute
+//             top: 0
+//             left: 0
+//             content: attr(data-title)
+//             transform: rotate(-90deg) 
+
+//     &__item
+//         margin-bottom: 20px
+//         line-height: 1.375
+//         letter-spacing: 0.32px
+

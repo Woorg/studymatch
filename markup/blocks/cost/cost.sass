@@ -1,0 +1,52 @@
+.cost
+    overflow: hidden
+    &__in
+        padding-bottom: 40px
+        
+        @include rmin($sm)
+            padding-bottom: 80px
+    &__title
+        margin-bottom: 40px
+        
+        @include rmin($sm)
+            margin-bottom: 70px
+            
+        span,
+        strong
+            &:after
+                top: calc(100% + 50px)
+                @include rmin($lg)
+                    top: 100%
+
+    &__row
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        text-align: center
+        
+    &__text
+        margin-right: 0
+        margin-bottom: 30px
+        font-family: $mo 
+        font-size: 20px
+        line-height: 1.4
+        font-weight: 700
+        text-transform: uppercase
+        text-align: left
+        @include rmin($sm)
+            margin-right: 60px
+            margin-bottom: 30px
+            font-size: 30px
+            line-height: 1
+            
+        @include rmin($md)
+            margin-bottom: 0
+        
+
+    &__button
+        padding-top: 16px
+        padding-bottom: 16px
+        display: inline-block
+        height: 48px
+        
+

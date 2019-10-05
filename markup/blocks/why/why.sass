@@ -1,0 +1,87 @@
+.why
+    overflow: hidden
+    &__in
+        padding-top: 80px
+        padding-bottom: 80px
+        @include rmin($lg)
+            padding-top: $padding
+            padding-bottom: $padding
+          
+    &__title   
+        margin-bottom: 65px
+        @include rmin($lg)
+            margin-bottom: $titlemargin
+    
+        span,
+        strong
+            &:after
+                top: calc(100% + 35px)
+                @include r($m)
+                    display: none
+
+                @include rmin($m)
+                    display: none
+                
+                @include rmin($sm)
+                    top: calc(100% + 50px)
+                    display: block
+                    
+                @include rmin($lg)
+                    top: 100%
+
+
+    &__w
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: flex-start
+        
+        @include rmin($lg)
+            flex-wrap: nowrap
+
+    &__list
+        margin-bottom: 30px
+        max-width: 100% 
+        
+        padding-top: 50px
+        padding-right: 18px
+        padding-left: 18px
+
+        height: 100%
+        flex-shrink: 0        
+        flex-grow: 0
+        flex-basis: 100%
+        
+        background-color: #fdfdfd
+        border-radius: 30px
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2)
+        
+        @include rmin($sm)
+            padding-top: 50px
+            padding-right: 140px
+            padding-left: 120px
+        @include rmin($lg)
+            margin-bottom: 0
+            padding-top: 50px
+            padding-right: 60px
+            padding-left: 92px
+            max-width: 48.7%
+            flex-basis: 48.7%
+            
+    &__item
+        margin-bottom: 14px
+        font-size: 16px
+        font-weight: 400
+        line-height: 1.375
+        letter-spacing: 0.32px
+
+    &__image
+        max-width: 100%
+        flex-basis: 100%
+        // background-color: #e8e8e8
+        border-radius: 30px
+        @include rmin($lg)
+            max-width: 48.7%
+            flex-basis: 48.7%
+            
+        // img
